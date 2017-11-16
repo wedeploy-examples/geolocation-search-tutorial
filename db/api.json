@@ -1,0 +1,15 @@
+[
+  {
+    "method": "GET",
+    "path": "/*",
+    "data": true
+  },
+  {
+    "method": ["DELETE", "PATCH", "POST", "PUT"],
+    "path": "/*",
+    "data": true,
+    "auth": {
+      "validator": "$auth != null"
+    }
+  }
+]

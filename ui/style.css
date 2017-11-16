@@ -1,0 +1,86 @@
+html, body, #map-canvas {
+  font: 400 16px Roboto,sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  color: darkred;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.header {
+  color: lightslategrey;
+  font-weight: bold;
+}
+
+.list-result-container {
+  border-bottom: 1px solid rgba(77, 144, 254, .2);
+  padding: 12px;
+  cursor: default;
+  transition: .333s;
+}
+
+.list-result-container:hover {
+  background-color: rgba(77, 144, 254, .2);
+  border-bottom: 1px solid white;
+}
+
+.name {
+  font-size: 18px;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.categories {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#result-canvas {
+  background-color: white;
+  bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3),0 4px 15px -5px rgba(0,0,0,0.0);
+  display: none;
+  font-size: 12px;
+  font-weight: 300;
+  left: 16px;
+  line-height: 16px;
+  max-width: 500px;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 5px;
+  position: absolute;
+  top: 56px;
+  transition: .333s;
+  width: 30%;
+}
+
+#result-time {
+  margin: 10px 10px 5px;
+  text-align: right;
+}
+
+#query {
+  border: 1px solid #4d90fe;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3),0 4px 15px -5px rgba(0,0,0,0.0);
+  font-size: 15px;
+  font-weight: 300;
+  height: 32px;
+  left: 15px;
+  line-height: 20px;
+  line-height: 32px;
+  max-width: 500px;
+  min-width: 300px;
+  outline: none;
+  padding: 5px;
+  position: absolute;
+  top: 15px;
+  width: 30%;
+}
