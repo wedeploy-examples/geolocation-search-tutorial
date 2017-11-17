@@ -4,17 +4,9 @@ function reloadVenues(searchArea) {
 	var radius = parseInt(searchArea.radius, 10);
 	var queryStr = document.getElementById('query').value;
 
-	WeDeploy
-		.data('https://db-geodemo.wedeploy.io')
-		.prefix('name', queryStr)
-		.limit(100)
-		.aggregate('score')
-		.distance('location', lat + ', ' + lng, radius + 'm')
-		.highlight('name')
-		.search('places')
-		.then(function(results) {
-			plotResults(results);
-		})
+	// Search Data Method Below
+
+	// Search Data Method Above
 }
 
 // Private helpers -------------------------------------------------------------
